@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function convert(){
+            var km=document.getElementById('data').value;
+            const factor= 0.621371;
+            var miles= km*factor;
+            document.getElementById('answer').innerText = miles + ' Miles';
+        }
+
+        function convert1(){
+            var c=document.getElementById('data1').value;
+            var f=(c*1.8)+32;
+            document.getElementById('answer1').innerText = f + ' Feranite';
+        }
+    </script>
+    <style>
+    h1{
+            color: grey;
+        }
+        body{
+            color: grey;
+        }
+        #box{
+            border: 2px solid gray;
+            box-sizing: content-box;
+            width: 500px;
+            height: 300px;
+            padding: 50px;
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 10px;
+            
+
+        }
+        .btn{
+            background: transparent;
+            border: 2px solid grey;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1></h1>
+<div id="box">
+    <input type="number" id="data"><br><br> Km
+    <button onclick="convert()" class="btn">convert</button> Miles
+    <h1 id="answer" class=""></h1><br>
+
+    <input type="number" id="data1"><br><br> Celsius
+    <button onclick="convert1()"class="btn">convert</button> Feranite
+    <h1 id="answer1" 2></h1>
+</div>
+</body>
+</html>
